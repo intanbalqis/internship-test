@@ -1,0 +1,12 @@
+body {
+  background: #f5f5f5;
+}
+
+.banner {
+  background: linear-gradient(90deg, #a7c7ff, #6fa8ff);
+}
+
+.card img {
+  height: 180px;
+  object-fit: contain;
+}
