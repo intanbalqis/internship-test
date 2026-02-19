@@ -8,32 +8,223 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Navbar -->
+<!-- TOP BAR -->
+<div class="top-wrapper">
+  <div class="container d-flex justify-content-between align-items-center">
+
+    <div class="d-flex align-items-center gap-2 small">
+      <span>📱</span>
+      <span><strong>Gratis Ongkir + Banyak Promo</strong> belanja di aplikasi →</span>
+    </div>
+
+    <div class="d-flex gap-3 small text-muted">
+      <span>Tentang Tokopedia</span>
+      <span>Mulai Berjualan</span>
+      <span>Promo</span>
+      <span>Tokopedia Care</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- NAVBAR -->
 <nav class="navbar navbar-light bg-white shadow-sm px-3">
   <h4 class="text-success m-0">tokopedia</h4>
+
+  <!-- search -->
   <input class="form-control w-50" type="search" placeholder="Cari di Tokopedia">
-  <div>
-    <button class="btn btn-outline-success">Masuk</button>
-    <button class="btn btn-success">Daftar</button>
+
+  <!-- kanan navbar -->
+  <div class="d-flex align-items-center gap-3">
+
+    <!-- icon keranjang -->
+    <span class="cart-icon">🛒</span>
+
+    <!-- tombol -->
+    <div class="text-end">
+      <button class="btn btn-outline-success">Masuk</button>
+      <button class="btn btn-success">Daftar</button>
+
+      <div class="location-text">
+        📍 Dikirim dari <strong>Jakarta Pusat</strong>
+      </div>
+    </div>
+
   </div>
 </nav>
 
-<!-- Banner -->
-<div class="banner text-center py-5">
-  <h2>Gadget Hemat Budget</h2>
-  <p>Diskon Spesial s.d 80%</p>
+
+<!-- BANNER -->
+<div class="banner-container">
+  <img src="images/banner.png" alt="Banner Diskon" class="banner-img">
 </div>
 
-<!-- Produk -->
+<!-- HEADER ELEKTRONIK RUMAH TANGGA -->
+<!-- HEADER ELEKTRONIK RUMAH TANGGA -->
 <div class="container my-4">
-  <h4 class="mb-3">Produk</h4>
-  <div class="row" id="product-list"></div>
+  <img src="images/elektronik-header.png" class="section-img" alt="Elektronik Rumah Tangga">
 </div>
 
+
+<!-- PRODUK -->
+<div class="container my-4">
+  <h4>Elektronik</h4>
+  <div class="row mb-5" id="elektronik"></div>
+
+  <h4>Fashion</h4>
+  <div class="row mb-5" id="fashion"></div>
+
+  <h4>Aksesoris</h4>
+  <div class="row mb-5" id="aksesoris"></div>
+</div>
+
+
+<!-- JS -->
 <script src="script.js"></script>
+
+
+<!-- ===== FOOTER FINAL ===== -->
+ <div class="container text-center my-5">
+  <div class="row justify-content-center">
+
+    <div class="col-md-3">
+      <img src="images/aman.png" class="fitur-img">
+      <h6 class="mt-2">Aman</h6>
+      <p class="small text-muted">Belanja lebih tenang dengan perlindungan transaksi.</p>
+    </div>
+
+    <div class="col-md-3">
+      <img src="images/transparan.png" class="fitur-img">
+      <h6 class="mt-2">Transparan</h6>
+      <p class="small text-muted">Informasi produk jelas dan terpercaya.</p>
+    </div>
+
+    <div class="col-md-3">
+      <img src="images/escrow.png" class="fitur-img">
+      <h6 class="mt-2">Fasilitas Escrow Gratis</h6>
+      <p class="small text-muted">Banyak pilihan pembayaran & pengiriman.</p>
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container py-5">
+
+    <!-- ===== BAGIAN LINK ATAS ===== -->
+    <div class="row gy-4">
+
+      <!-- Tokopedia -->
+      <div class="col-md-2">
+        <h6 class="footer-title">Tokopedia</h6>
+        <p>Tentang Tokopedia</p>
+        <p>Karir</p>
+        <p>Blog</p>
+        <p>Tokopedia Care</p>
+      </div>
+
+      <!-- Beli -->
+      <div class="col-md-2">
+        <h6 class="footer-title">Beli</h6>
+        <p>Tagihan & Top Up</p>
+        <p>Tokopedia COD</p>
+        <p>Bebas Ongkir</p>
+      </div>
+
+      <!-- Jual -->
+      <div class="col-md-2">
+        <h6 class="footer-title">Jual</h6>
+        <p>Pusat Edukasi Seller</p>
+        <p>Daftar Official Store</p>
+        <p>Jualan di Tokopedia</p>
+      </div>
+
+      <!-- Bantuan -->
+      <div class="col-md-2">
+        <h6 class="footer-title">Bantuan & Panduan</h6>
+        <p>Bantuan</p>
+        <p>Hubungi Kami</p>
+        <p>Syarat & Ketentuan</p>
+      </div>
+
+      <!-- Keamanan -->
+      <div class="col-md-2">
+        <h6 class="footer-title">Keamanan & Privasi</h6>
+        <div class="d-flex gap-2 mt-2">
+          <img src="images/pci.png" class="logo-sec">
+          <img src="images/bsi.png" class="logo-sec">
+        </div>
+      </div>
+
+      <!-- Ikuti Kami -->
+      <div class="col-md-2">
+        <h6 class="footer-title">Ikuti Kami</h6>
+        <div class="d-flex gap-3 mt-2 social-icons">
+          <img src="images/fb.png">
+          <img src="images/twitter.png">
+          <img src="images/pin.png">
+          <img src="images/ig.png">
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ===== BAGIAN KEUNTUNGAN + QR ===== -->
+    <div class="row mt-5 align-items-start">
+
+      <!-- Keuntungan -->
+      <div class="col-md-6">
+        <h6 class="footer-title">Nikmati Keuntungan Spesial</h6>
+
+        <div class="benefit"><span class="icon">$</span> Promo Pengguna Baru</div>
+        <div class="benefit"><span class="icon">%</span> Voucher & Cashback</div>
+        <div class="benefit"><span class="icon">🚚</span> Gratis Ongkir</div>
+      </div>
+
+        <!-- Buka Aplikasi -->
+      <div class="col-md-6">
+        <h6 class="footer-title">Buka Aplikasi</h6>
+
+        <div class="d-flex align-items-start gap-3 mt-2">
+
+          <div class="text-center">
+            <img src="images/qr.png" class="qr">
+            <div class="learn-more">Pelajari selengkapnya →</div>
+          </div>
+
+          <div class="d-flex flex-column gap-2">
+            <img src="images/googleplay.png" class="store">
+            <img src="images/appstore.png" class="store">
+            <img src="images/appgallery.png" class="store">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <!-- footer paling bawah -->
+    <div class="footer-bottom">
+      <p class="mb-0">© 2009–2025 Tokopedia — Internship Test</p>
+
+      <div class="lang-switch">
+        <span class="lang-active">English</span>
+        <span class="lang-box">Indonesia</span>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
 </body>
 </html>
